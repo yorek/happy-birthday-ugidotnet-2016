@@ -1,0 +1,8 @@
+c:\users\administrator\documents\visual studio 2015\Projects\AlwaysEncrypted\AlwaysEncrypted\bin\Debug\AlwaysEncrypted.exe.config
+c:\users\administrator\documents\visual studio 2015\Projects\AlwaysEncrypted\AlwaysEncrypted\bin\Debug\AlwaysEncrypted.exe
+c:\users\administrator\documents\visual studio 2015\Projects\AlwaysEncrypted\AlwaysEncrypted\bin\Debug\AlwaysEncrypted.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\AlwaysEncrypted\AlwaysEncrypted\bin\Debug\Dapper.dll
+c:\users\administrator\documents\visual studio 2015\Projects\AlwaysEncrypted\AlwaysEncrypted\bin\Debug\Dapper.xml
+c:\users\administrator\documents\visual studio 2015\Projects\AlwaysEncrypted\AlwaysEncrypted\obj\Debug\AlwaysEncrypted.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2015\Projects\AlwaysEncrypted\AlwaysEncrypted\obj\Debug\AlwaysEncrypted.exe
+c:\users\administrator\documents\visual studio 2015\Projects\AlwaysEncrypted\AlwaysEncrypted\obj\Debug\AlwaysEncrypted.pdb
