@@ -6,3 +6,11 @@ c:\users\administrator\documents\visual studio 2015\Projects\AlwaysEncrypted\Alw
 c:\users\administrator\documents\visual studio 2015\Projects\AlwaysEncrypted\AlwaysEncrypted\obj\Debug\AlwaysEncrypted.csprojResolveAssemblyReference.cache
 c:\users\administrator\documents\visual studio 2015\Projects\AlwaysEncrypted\AlwaysEncrypted\obj\Debug\AlwaysEncrypted.exe
 c:\users\administrator\documents\visual studio 2015\Projects\AlwaysEncrypted\AlwaysEncrypted\obj\Debug\AlwaysEncrypted.pdb
+Z:\Work\_Conferenze\UGIDotNet\2016\Demos\AlwaysEncrypted\Client\AlwaysEncrypted\bin\Debug\AlwaysEncrypted.exe.config
+Z:\Work\_Conferenze\UGIDotNet\2016\Demos\AlwaysEncrypted\Client\AlwaysEncrypted\obj\Debug\AlwaysEncrypted.exe
+Z:\Work\_Conferenze\UGIDotNet\2016\Demos\AlwaysEncrypted\Client\AlwaysEncrypted\obj\Debug\AlwaysEncrypted.pdb
+Z:\Work\_Conferenze\UGIDotNet\2016\Demos\AlwaysEncrypted\Client\AlwaysEncrypted\obj\Debug\AlwaysEncrypted.csprojResolveAssemblyReference.cache
+Z:\Work\_Conferenze\UGIDotNet\2016\Demos\AlwaysEncrypted\Client\AlwaysEncrypted\bin\Debug\AlwaysEncrypted.exe
+Z:\Work\_Conferenze\UGIDotNet\2016\Demos\AlwaysEncrypted\Client\AlwaysEncrypted\bin\Debug\AlwaysEncrypted.pdb
+Z:\Work\_Conferenze\UGIDotNet\2016\Demos\AlwaysEncrypted\Client\AlwaysEncrypted\bin\Debug\Dapper.dll
+Z:\Work\_Conferenze\UGIDotNet\2016\Demos\AlwaysEncrypted\Client\AlwaysEncrypted\bin\Debug\Dapper.xml

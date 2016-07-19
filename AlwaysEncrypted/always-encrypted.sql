@@ -41,3 +41,6 @@ go
 
 select * from dbo.Customers
 go
+
+--truncate table dbo.Customers
+--go

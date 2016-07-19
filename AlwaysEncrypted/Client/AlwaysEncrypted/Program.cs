@@ -31,6 +31,7 @@ namespace AlwaysEncrypted
                 Console.WriteLine("Press ENTER to continue");
                 Console.ReadLine();
 
+                Console.WriteLine("Retrieving Customer using SSN.");
                 var result = conn.Query("select first_name, last_name, birth_date from dbo.Customers where ssn = @ssn", new { ssn = "123456789" }).First();
                 Console.WriteLine(result.first_name + " " + result.last_name);
                 Console.WriteLine("Press ENTER to continue");
