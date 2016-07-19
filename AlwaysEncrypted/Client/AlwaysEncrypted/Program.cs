@@ -13,28 +13,44 @@ namespace AlwaysEncrypted
     {
         static void Main(string[] args)
         {
-            SqlConnectionStringBuilder strbldr = new SqlConnectionStringBuilder();
-            strbldr.DataSource = "localhost";
-            strbldr.InitialCatalog = "tempdb";
-            strbldr.IntegratedSecurity = true;
-            strbldr.ColumnEncryptionSetting = SqlConnectionColumnEncryptionSetting.Enabled;
-            SqlConnection conn = new SqlConnection(strbldr.ConnectionString);
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+            builder.DataSource = "localhost";
+            builder.InitialCatalog = "tempdb";
+            builder.IntegratedSecurity = true;
+            builder.ApplicationName = "AlwaysEncrypted Demo";
+            builder.ColumnEncryptionSetting = SqlConnectionColumnEncryptionSetting.Enabled;
+            SqlConnection conn = new SqlConnection(builder.ConnectionString);
 
             conn.Open();
             try
             {
-                var p = new DynamicParameters();
-                p.Add("@firstName", "Davide", DbType.String, ParameterDirection.Input, 100);
-                p.Add("@lastName", "Mauri", DbType.String, ParameterDirection.Input, 100);
-                p.Add("@ssn", "123456789", DbType.String, ParameterDirection.Input, 100);
-                p.Add("@birthDate", new DateTime(1977, 8, 12), DbType.DateTime2, ParameterDirection.Input, 7);
+                InsertRow(conn, "Davide", "Mauri", "123456789", new DateTime(1977, 8, 12));
+                InsertRow(conn, "John", "Doe", "987654321", new DateTime(2001, 1, 1));
 
-                conn.Execute("insert into dbo.Customers (first_name, last_name, ssn, birth_date) values (@firstName, @lastName, @ssn, @birthDate)", p);
+                Console.WriteLine("Rows Added.");
+                Console.WriteLine("Press ENTER to continue");
+                Console.ReadLine();
+
+                var result = conn.Query("select first_name, last_name, birth_date from dbo.Customers where ssn = @ssn", new { ssn = "123456789" }).First();
+                Console.WriteLine(result.first_name + " " + result.last_name);
+                Console.WriteLine("Press ENTER to continue");
+                Console.ReadLine();
             }
             finally
             {
                 conn.Close();
             }
         }
+
+        private static void InsertRow(SqlConnection conn, string name, string surname, string ssn, DateTime birthDate)
+        {
+            var p = new DynamicParameters();
+            p.Add("@firstName", name, DbType.String, ParameterDirection.Input, 100);
+            p.Add("@lastName", surname, DbType.String, ParameterDirection.Input, 100);
+            p.Add("@ssn", ssn, DbType.String, ParameterDirection.Input, 100);
+            p.Add("@birthDate", birthDate, DbType.DateTime2, ParameterDirection.Input, 7);
+
+            conn.Execute("insert into dbo.Customers (first_name, last_name, ssn, birth_date) values (@firstName, @lastName, @ssn, @birthDate)", p);
+        }       
     }
 }

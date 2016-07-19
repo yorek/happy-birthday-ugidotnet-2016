@@ -148,7 +148,7 @@ select * from sys.objects where object_id in (select cast([value] as int) from o
 select 
 	j.* 
 from 
-	openrowset(bulk N'Z:\Work\_Conferenze\DevWeek - London\2016\SQL Server 2016 JSON\JSON\sample.json', single_clob) t
+	openrowset(bulk N'Z:\Work\_Conferenze\UGIDotNet\2016\Demos\JSON\sample.json', single_clob) t
 cross apply 
 	openjson(t.BulkColumn) j
 go
@@ -156,7 +156,7 @@ go
 select 
 	j.* 
 from 
-	openrowset(bulk N'Z:\Work\_Conferenze\DevWeek - London\2016\SQL Server 2016 JSON\JSON\sample.json', single_clob) t
+	openrowset(bulk N'Z:\Work\_Conferenze\UGIDotNet\2016\Demos\JSON\sample.json', single_clob) t
 cross apply 
 	openjson(t.BulkColumn) with 
 		(
